@@ -67,12 +67,12 @@
                         <img src="logolengkap.png" alt="Logo PANDU MAHARAJA" class="h-10 w-auto">
                     </a>
                     <div id="main-nav" class="hidden md:flex space-x-8 items-center text-gray-600">
-                        <a href="#hero" class="nav-link hover:text-blue-500" data-section="hero">Home</a>
+                        <a href="#home" class="nav-link hover:text-blue-500" data-section="home">Home</a> <!-- REVISI -->
                         <a href="#tentang" class="nav-link hover:text-blue-500" data-section="tentang">Tentang</a>
                         <a href="#alur" class="nav-link hover:text-blue-500" data-section="alur">Alur</a>
                         <a href="#design-grafis" class="nav-link hover:text-blue-500" data-section="design-grafis">Design Grafis</a>
                         <a href="#jadwal-manfaat" class="nav-link hover:text-blue-500" data-section="jadwal-manfaat">Jadwal & Manfaat</a>
-                        <a href="#blog-list" class="nav-link hover:text-blue-500" data-section="artikel">Artikel</a> <!-- Ubah href ke #blog-list -->
+                        <a href="#artikel-list" class="nav-link hover:text-blue-500" data-section="artikel">Artikel</a> <!-- REVISI -->
                         <a href="#galeri" class="nav-link hover:text-blue-500" data-section="galeri">Galeri</a>
                     </div>
                     <a href="http://bit.ly/reservasipandumaharaja" target="_blank" class="hidden md:block text-white font-semibold px-6 py-2 rounded-full primary-button">
@@ -83,12 +83,12 @@
                     </button>
                 </nav>
                 <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 bg-white border-t border-gray-200">
-                     <a href="#hero" class="nav-link block py-2 hover:text-blue-500" data-section="hero">Home</a>
+                     <a href="#home" class="nav-link block py-2 hover:text-blue-500" data-section="home">Home</a> <!-- REVISI -->
                      <a href="#tentang" class="nav-link block py-2 hover:text-blue-500" data-section="tentang">Tentang</a>
                      <a href="#alur" class="nav-link block py-2 hover:text-blue-500" data-section="alur">Alur Pelayanan</a>
                      <a href="#design-grafis" class="nav-link block py-2 hover:text-blue-500" data-section="design-grafis">Design Grafis</a>
                      <a href="#jadwal-manfaat" class="nav-link block py-2 hover:text-blue-500" data-section="jadwal-manfaat">Jadwal & Manfaat</a>
-                     <a href="#blog-list" class="nav-link block py-2 hover:text-blue-500" data-section="artikel">Artikel</a> <!-- Ubah href ke #blog-list -->
+                     <a href="#artikel-list" class="nav-link block py-2 hover:text-blue-500" data-section="artikel">Artikel</a> <!-- REVISI -->
                      <a href="#galeri" class="nav-link block py-2 hover:text-blue-500" data-section="galeri">Galeri</a>
                      <a href="http://bit.ly/reservasipandumaharaja" target="_blank" class="mt-4 block w-full text-center text-white font-semibold px-6 py-2 rounded-full primary-button">Reservasi Online</a>
                 </div>
@@ -97,7 +97,7 @@
 
         <div id="main-page" class="page active">
             <main>
-                <section id="hero" class="scroll-animate relative text-gray-800 min-h-[calc(80vh-104px)] flex items-center pt-20 overflow-hidden">
+                <section id="home" class="scroll-animate relative text-gray-800 min-h-[calc(80vh-104px)] flex items-center pt-20 overflow-hidden"> <!-- REVISI -->
                     <canvas id="hero-canvas-background"></canvas>
                     <div class="container mx-auto px-6 text-center z-10">
                         <h1 class="text-4xl md:text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-600">Deteksi Dini, Aksi Tepat</h1>
@@ -215,7 +215,7 @@
                         <h2 class="text-3xl font-bold mb-4 section-title">Wawasan Kesehatan Terkini</h2>
                         <p class="max-w-3xl mx-auto text-gray-600 mb-12">Baca artikel dan tips terbaru dari tim kami untuk membantu Anda hidup lebih sehat dan terhindar dari risiko Penyakit Tidak Menular.</p>
                         <div id="blog-highlight-container" class="grid md:grid-cols-3 gap-8 mt-12"></div>
-                        <div class="mt-16"><a href="#blog-list" class="text-white font-bold text-lg px-10 py-4 rounded-full primary-button">Lihat Semua Artikel</a></div> <!-- Ubah href ke #blog-list -->
+                        <div class="mt-16"><a href="#artikel-list" class="text-white font-bold text-lg px-10 py-4 rounded-full primary-button">Lihat Semua Artikel</a></div> <!-- REVISI -->
                     </div>
                 </section>
                 
@@ -313,7 +313,7 @@
                 { id: 2, title: 'Gula Tersembunyi: Kenali Musuh dalam Makanan Anda', author: 'Tim PANDU MAHARAJA', date: '18 Juni 2025', category: 'Diabetes', image: 'https://placehold.co/600x400/8b5cf6/FFFFFF?text=Gula+Darah', content: `<p class="mb-4">Saat kita berpikir tentang gula, kita sering membayangkan gula pasir atau permen. Padahal, gula memiliki banyak nama dan seringkali "bersembunyi" di dalam produk makanan dan minuman yang kita anggap sehat.</p><strong class="text-gray-900 text-lg block mb-2">Di mana Gula Bersembunyi?</strong><ul class="list-disc list-inside space-y-2 mb-4"><li><strong>Minuman Kemasan:</strong> Jus buah kotak, teh manis kemasan, dan minuman bersoda adalah sumber gula tambahan terbesar.</li><li><strong>Saus dan Bumbu:</strong> Saus tomat, saus sambal botolan, dan saus salad seringkali mengandung banyak gula.</li><li><strong>Sereal Sarapan:</strong> Banyak sereal, terutama yang ditujukan untuk anak-anak, dilapisi gula.</li><li><strong>Roti Tawar Putih:</strong> Roti jenis ini memiliki indeks glikemik tinggi dan cepat diubah menjadi gula dalam tubuh.</li></ul><strong class="text-gray-900 text-lg block mb-2">Bagaimana Cara Menghindarinya?</strong><p>Selalu periksa label informasi nilai gizi. Waspadai nama lain gula seperti sirup jagung fruktosa tinggi, sukrosa, dekstrosa, maltosa, dan madu. Pilihlah air putih sebagai minuman utama dan konsumsi makanan utuh (whole foods) yang tidak diproses.</p>`},
                 { id: 3, title: 'Pentingnya SADARI untuk Deteksi Dini Kanker Payudara', author: 'Tim PANDU MAHARAJA', date: '15 Juni 2025', category: 'Kanker', image: 'https://placehold.co/600x400/ec4899/FFFFFF?text=SADARI', content: `<p class="mb-4">Kanker payudara adalah salah satu jenis kanker yang paling umum pada wanita, namun tingkat keberhasilan pengobatannya sangat tinggi jika ditemukan pada stadium awal. Di sinilah peran penting Pemeriksaan Payudara Sendiri (SADARI).</p><strong class="text-gray-900 text-lg block mb-2">Kapan Melakukan SADARI?</strong><p class="mb-4">Waktu terbaik adalah sekitar 7-10 hari setelah hari pertama menstruasi, saat payudara tidak terlalu tegang atau bengkak. Bagi wanita yang sudah menopause, pilihlah tanggal yang sama setiap bulannya untuk melakukannya.</p><strong class="text-gray-900 text-lg block mb-2">Apa yang Harus Diperhatikan?</strong><ul class="list-disc list-inside space-y-2 mb-4"><li>Adanya benjolan atau penebalan pada payudara atau area ketiak.</li><li>Perubahan ukuran, bentuk, atau kontur payudara.</li><li>Keluarnya cairan bening atau berdarah dari puting.</li><li>Kulit payudara yang mengerut atau tertarik ke dalam seperti lesung pipi.</li><li>Puting yang masuk ke dalam atau terasa nyeri.</li></ul><p>SADARI bukan untuk mendiagnosis, tetapi untuk mengenali tubuh Anda. Jika Anda menemukan salah satu dari perubahan ini, jangan panik, tetapi segeralah berkonsultasi dengan tenaga medis di Puskesmas untuk pemeriksaan lebih lanjut.</p>`},
                 { id: 4, title: 'Cegah Stroke Sejak Dini: Tips Gaya Hidup Sehat', author: 'Dr. Budi Santoso', date: '12 Juni 2025', category: 'Stroke', image: 'https://placehold.co/600x400/f59e0b/FFFFFF?text=Otak+Sehat', content: `<p class="mb-4">Stroke terjadi ketika pasokan darah ke otak terganggu. Meskipun terdengar menakutkan, hingga 80% kasus stroke dapat dicegah dengan mengendalikan faktor risikonya. Kuncinya ada pada gaya hidup Anda.</p><strong class="text-gray-900 text-lg block mb-2">Pilar Pencegahan Stroke:</strong><ul class="list-disc list-inside space-y-2 mb-4"><li><strong>Pola Makan Sehat Jantung:</strong> Fokus pada diet kaya serat dari buah, sayur, biji-bijian, dan protein tanpa lemak. Batasi lemak jenuh, lemak trans, dan kolesterol.</li><li><strong>Jaga Berat Badan Ideal:</strong> Obesitas meningkatkan risiko hipertensi, penyakit jantung, dan diabetes, yang semuanya merupakan faktor risiko utama stroke.</li><li><strong>Berhenti Merokok:</strong> Merokok merusak pembuluh darah dan mempercepat pembentukan sumbatan arteri. Berhenti merokok adalah satu-satunya hal terbaik yang bisa Anda lakukan untuk mencegah stroke.</li><li><strong>Batasi Konsumsi Alkohol:</strong> Konsumsi alkohol berlebihan dapat meningkatkan tekanan darah.</li><li><strong>Kendalikan Kondisi Medis:</strong> Pastikan tekanan darah tinggi, kolesterol tinggi, dan diabetes Anda terkontrol dengan baik melalui pengobatan dan gaya hidup sehat.</li></ul><p>Memulai perubahan kecil hari ini dapat memberikan perlindungan besar bagi kesehatan otak Anda di masa depan.</p>`},
-                { id: 5, title: 'Stres dan PTM: Hubungan Tak Terlihat yang Perlu Diwaspadai', author: 'Tim PANDU MAHARAJA', date: '10 Juni 2025', category: 'Kesehatan Mental', image: 'https://placehold.co/600x400/10b981/FFFFFF?text=Relaksasi', content: `<p class="mb-4">Kita semua mengalami stres, tetapi ketika stres menjadi kronis (berkepanjangan), dampaknya tidak hanya pada pikiran, tetapi juga pada tubuh. Stres kronis dapat berkontribusi secara signifikan terhadap perkembangan Penyakit Tidak Menular (PTM).</p><strong class="text-gray-900 text-lg block mb-2">Bagaimana Stres Mempengaruhi Tubuh?</strong><p class="mb-4">Saat stres, tubuh melepaskan hormon seperti kortisol dan adrenalin. Dalam jangka panjang, kadar hormon ini yang terus-menerus tinggi dapat menyebabkan:</p><ul class="list-disc list-inside space-y-2 mb-4"><li><strong>Peningkatan Tekanan Darah:</strong> Membebani jantung dan pembuluh darah.</li><li><strong>Peradangan (Inflamasi):</strong> Memicu kerusakan sel dan arteri.</li><li><strong>Peningkatan Gula Darah:</strong> Meningkatkan risiko resistensi insulin dan diabetes.</li><li><strong>Perilaku Tidak Sehat:</strong> Stres seringkali mendorong kita untuk makan berlebihan, merokok, atau kurang tidur, yang semuanya adalah faktor risiko PTM.</li></ul><p>Meluangkan waktu untuk relaksasi, seperti yoga, jalan-jalan di alam, mendengarkan musik, atau sekadar berbicara dengan teman, adalah bagian penting dari strategi pencegahan PTM. Jaga kesehatan mental Anda, maka fisik Anda akan mengikuti.</p>`}
+                { id: 5, title: 'Stres dan PTM: Hubungan Tak Terlihat yang Perlu Diwaspadai', author: 'Tim PANDU MAHARAJA', date: '10 Juni 2025', category: 'Kesehatan Mental', image: 'https://placehold.co/600x400/10b981/FFFFFF?text=Relaksasi', content: `<p class="mb-4">Kita semua mengalami stres, tetapi ketika stres menjadi kronis (berkepanjangan), dampaknya tidak hanya pada pikiran, tetapi juga pada tubuh. Stres kronis dapat berkontribusi secara signifikan terhadap perkembangan Penyakit Tidak Menular (PTM).</p><strong class="text-gray-900 text-lg block mb-2">Bagaimana Stres Mempengaruhi Tubuh?</strong><p class="mb-4">Saat stres, tubuh melepaskan hormon seperti kortisol dan adrenalin. Dalam jangka panjang, kadar hormon ini yang terus-menerus tinggi dapat menyebabkan:</p><ul class="list-disc list-inside space-y-2 mb-4"><li><strong>Peningkatan Tekanan Darah:</strong> Membebani jantung dan pembuluh darah.</li><li><strong>Peradangan (Inflamsi):</strong> Memicu kerusakan sel dan arteri.</li><li><strong>Peningkatan Gula Darah:</strong> Meningkatkan risiko resistensi insulin dan diabetes.</li><li><strong>Perilaku Tidak Sehat:</strong> Stres seringkali mendorong kita untuk makan berlebihan, merokok, atau kurang tidur, yang semuanya adalah faktor risiko PTM.</li></ul><p>Meluangkan waktu untuk relaksasi, seperti yoga, jalan-jalan di alam, mendengarkan musik, atau sekadar berbicara dengan teman, adalah bagian penting dari strategi pencegahan PTM. Jaga kesehatan mental Anda, maka fisik Anda akan mengikuti.</p>`}
             ];
 
             // --- ELEMENTS & RENDER FUNCTIONS ---
@@ -340,11 +340,11 @@
             function renderArticleDetail(postId) {
                 const post = blogPosts.find(p => p.id == postId);
                 if (!post) {
-                    articleContentContainer.innerHTML = `<p class="text-center text-red-500">Artikel tidak ditemukan.</p><div class="mt-8 text-center"><a href="#blog-list" class="text-blue-500 hover:underline">&larr; Kembali ke semua artikel</a></div>`;
+                    articleContentContainer.innerHTML = `<p class="text-center text-red-500">Artikel tidak ditemukan.</p><div class="mt-8 text-center"><a href="#artikel-list" class="text-blue-500 hover:underline">&larr; Kembali ke semua artikel</a></div>`; // REVISI
                     return;
                 }
-                // Tambahkan link kembali ke #blog-list
-                articleContentContainer.innerHTML = `<div class="mb-8"><a href="#blog-list" class="text-blue-500 hover:underline">&larr; Kembali ke semua artikel</a></div><h1 class="text-4xl md:text-5xl font-bold mb-4 section-title">${post.title}</h1><div class="text-sm text-gray-500 flex items-center mb-6"><span>Oleh: ${post.author}</span><span class="mx-2">•</span><span>${post.date}</span><span class="mx-2">•</span><span class="text-xs font-semibold text-blue-600 bg-blue-100 py-1 px-3 rounded-full">${post.category}</span></div><img src="${post.image}" alt="${post.title}" class="w-full h-auto max-h-96 object-cover rounded-xl mb-8"><div class="prose max-w-none text-gray-700 text-lg leading-relaxed">${post.content}</div>`;
+                // Tambahkan link kembali ke #artikel-list
+                articleContentContainer.innerHTML = `<div class="mb-8"><a href="#artikel-list" class="text-blue-500 hover:underline">&larr; Kembali ke semua artikel</a></div><h1 class="text-4xl md:text-5xl font-bold mb-4 section-title">${post.title}</h1><div class="text-sm text-gray-500 flex items-center mb-6"><span>Oleh: ${post.author}</span><span class="mx-2">•</span><span>${post.date}</span><span class="mx-2">•</span><span class="text-xs font-semibold text-blue-600 bg-blue-100 py-1 px-3 rounded-full">${post.category}</span></div><img src="${post.image}" alt="${post.title}" class="w-full h-auto max-h-96 object-cover rounded-xl mb-8"><div class="prose max-w-none text-gray-700 text-lg leading-relaxed">${post.content}</div>`; // REVISI
             }
             
             function renderBlogHighlights() { if(blogHighlightContainer) blogHighlightContainer.innerHTML = blogPosts.slice(0, 3).map(createBlogCard).join('');}
@@ -380,13 +380,13 @@
                 if (hash.startsWith('#article/')) {
                     const articleId = hash.substring('#article/'.length);
                     displayPage('article-detail-page', articleId);
-                } else if (hash === '#blog-list') {
+                } else if (hash === '#artikel-list') { // REVISI
                     displayPage('blog-list-page');
                 } else {
-                    // Ini menangani #hero, #tentang, #alur, dll. ATAU hash kosong (#)
+                    // Ini menangani #home, #tentang, #alur, dll. ATAU hash kosong (#)
                     displayPage('main-page');
                     
-                    const sectionId = hash.substring(1); // 'hero', 'tentang', atau ''
+                    const sectionId = hash.substring(1); // 'home', 'tentang', atau ''
                     let targetSection;
 
                     if (sectionId && document.getElementById(sectionId)) {
@@ -515,7 +515,7 @@
 
                 // Cek jika kita di paling atas
                 if (window.scrollY < document.getElementById('tentang').offsetTop - headerHeight - 20) {
-                    currentSectionId = 'hero';
+                    currentSectionId = 'home'; // REVISI
                 }
                 
                 allNavLinks.forEach(link => {
@@ -624,5 +624,4 @@
     </script>
 </body>
 </html>
-
 
