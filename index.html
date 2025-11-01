@@ -63,18 +63,17 @@
             </div>
             <header class="bg-white/80 backdrop-blur-md border-b border-gray-200">
                 <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-                    <a href="#" class="nav-link" data-page="main-page" data-section="hero">
+                    <a href="#" class="nav-link-logo"> <!-- Hapus data-page dan data-section -->
                         <img src="logolengkap.png" alt="Logo PANDU MAHARAJA" class="h-10 w-auto">
                     </a>
                     <div id="main-nav" class="hidden md:flex space-x-8 items-center text-gray-600">
-                        <a href="#hero" class="nav-link hover:text-blue-500" data-page="main-page" data-section="hero">Home</a>
-                        <a href="#tentang" class="nav-link hover:text-blue-500" data-page="main-page" data-section="tentang">Tentang</a>
-                        <a href="#alur" class="nav-link hover:text-blue-500" data-page="main-page" data-section="alur">Alur</a>
-                        <a href="#design-grafis" class="nav-link hover:text-blue-500" data-page="main-page" data-section="design-grafis">Design Grafis</a>
-                        <a href="#jadwal-manfaat" class="nav-link hover:text-blue-500" data-page="main-page" data-section="jadwal-manfaat">Jadwal & Manfaat</a>
-                        <a href="#" class="nav-link hover:text-blue-500" data-page="blog-list-page" data-section="artikel">Artikel</a>
-                        <a href="#galeri" class="nav-link hover:text-blue-500" data-page="main-page" data-section="galeri">Galeri</a>
-                        
+                        <a href="#hero" class="nav-link hover:text-blue-500" data-section="hero">Home</a>
+                        <a href="#tentang" class="nav-link hover:text-blue-500" data-section="tentang">Tentang</a>
+                        <a href="#alur" class="nav-link hover:text-blue-500" data-section="alur">Alur</a>
+                        <a href="#design-grafis" class="nav-link hover:text-blue-500" data-section="design-grafis">Design Grafis</a>
+                        <a href="#jadwal-manfaat" class="nav-link hover:text-blue-500" data-section="jadwal-manfaat">Jadwal & Manfaat</a>
+                        <a href="#blog-list" class="nav-link hover:text-blue-500" data-section="artikel">Artikel</a> <!-- Ubah href ke #blog-list -->
+                        <a href="#galeri" class="nav-link hover:text-blue-500" data-section="galeri">Galeri</a>
                     </div>
                     <a href="http://bit.ly/reservasipandumaharaja" target="_blank" class="hidden md:block text-white font-semibold px-6 py-2 rounded-full primary-button">
                         Reservasi Online
@@ -84,14 +83,13 @@
                     </button>
                 </nav>
                 <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 bg-white border-t border-gray-200">
-                     <a href="#hero" class="nav-link block py-2 hover:text-blue-500" data-page="main-page" data-section="hero">Home</a>
-                     <a href="#tentang" class="nav-link block py-2 hover:text-blue-500" data-page="main-page" data-section="tentang">Tentang</a>
-                     <a href="#alur" class="nav-link block py-2 hover:text-blue-500" data-page="main-page" data-section="alur">Alur Pelayanan</a>
-                                          <a href="#design-grafis" class="nav-link block py-2 hover:text-blue-500" data-page="main-page" data-section="design-grafis">Design Grafis</a>
-                     <a href="#jadwal-manfaat" class="nav-link block py-2 hover:text-blue-500" data-page="main-page" data-section="jadwal-manfaat">Jadwal & Manfaat</a>
-                     <a href="#" class="nav-link block py-2 hover:text-blue-500" data-page="blog-list-page" data-section="artikel">Artikel</a>
-                     <a href="#galeri" class="nav-link block py-2 hover:text-blue-500" data-page="main-page" data-section="galeri">Galeri</a>
-
+                     <a href="#hero" class="nav-link block py-2 hover:text-blue-500" data-section="hero">Home</a>
+                     <a href="#tentang" class="nav-link block py-2 hover:text-blue-500" data-section="tentang">Tentang</a>
+                     <a href="#alur" class="nav-link block py-2 hover:text-blue-500" data-section="alur">Alur Pelayanan</a>
+                     <a href="#design-grafis" class="nav-link block py-2 hover:text-blue-500" data-section="design-grafis">Design Grafis</a>
+                     <a href="#jadwal-manfaat" class="nav-link block py-2 hover:text-blue-500" data-section="jadwal-manfaat">Jadwal & Manfaat</a>
+                     <a href="#blog-list" class="nav-link block py-2 hover:text-blue-500" data-section="artikel">Artikel</a> <!-- Ubah href ke #blog-list -->
+                     <a href="#galeri" class="nav-link block py-2 hover:text-blue-500" data-section="galeri">Galeri</a>
                      <a href="http://bit.ly/reservasipandumaharaja" target="_blank" class="mt-4 block w-full text-center text-white font-semibold px-6 py-2 rounded-full primary-button">Reservasi Online</a>
                 </div>
             </header>
@@ -205,12 +203,12 @@
                     </div>
                 </section>
 
-                <section id="artikel" class="scroll-animate py-20 bg-gray-50">
+                <section id="artikel" class="scroll-animate py-20 bg-gray-50"> <!-- ID ini mungkin bisa diganti ke 'blog-section' atau semacamnya agar tidak bentrok, tapi biarkan dulu -->
                     <div class="container mx-auto px-6 text-center">
                         <h2 class="text-3xl font-bold mb-4 section-title">Wawasan Kesehatan Terkini</h2>
                         <p class="max-w-3xl mx-auto text-gray-600 mb-12">Baca artikel dan tips terbaru dari tim kami untuk membantu Anda hidup lebih sehat dan terhindar dari risiko Penyakit Tidak Menular.</p>
                         <div id="blog-highlight-container" class="grid md:grid-cols-3 gap-8 mt-12"></div>
-                        <div class="mt-16"><a href="#" class="text-white font-bold text-lg px-10 py-4 rounded-full primary-button nav-link" data-page="blog-list-page">Lihat Semua Artikel</a></div>
+                        <div class="mt-16"><a href="#blog-list" class="text-white font-bold text-lg px-10 py-4 rounded-full primary-button">Lihat Semua Artikel</a></div> <!-- Ubah href ke #blog-list -->
                     </div>
                 </section>
                 
@@ -239,7 +237,7 @@
                     <div class="text-center mb-16">
                         <h2 class="text-4xl font-bold mb-4 section-title">Semua Artikel</h2>
                         <p class="max-w-2xl mx-auto text-gray-600">Jelajahi arsip lengkap kami untuk wawasan mendalam tentang pencegahan dan pengelolaan Penyakit Tidak Menular.</p>
-                        <a href="#" class="nav-link text-blue-500 hover:underline mt-4 inline-block" data-page="main-page" data-section="hero">&larr; Kembali ke Menu Utama</a>
+                        <a href="#" class="text-blue-500 hover:underline mt-4 inline-block">&larr; Kembali ke Menu Utama</a> <!-- Ubah href ke # -->
                     </div>
                     <div id="blog-list-container" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
                 </div>
@@ -316,54 +314,95 @@
             const blogListContainer = document.getElementById('blog-list-container');
             const articleContentContainer = document.getElementById('article-content-container');
             
-            function createBlogCard(post) { return `<div class="light-glass-card rounded-xl text-left overflow-hidden group blog-card-link cursor-pointer" data-id="${post.id}"><img src="${post.image}" alt="Gambar artikel tentang ${post.category}" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"><div class="p-6"><span class="text-xs font-semibold text-blue-600 bg-blue-100 py-1 px-3 rounded-full">${post.category}</span><h3 class="font-bold text-xl my-3 text-gray-900">${post.title}</h3><div class="text-sm text-gray-500 flex items-center"><span>${post.author}</span><span class="mx-2">•</span><span>${post.date}</span></div></div></div>`; }
-            function renderBlogHighlights() { if(blogHighlightContainer) blogHighlightContainer.innerHTML = blogPosts.slice(0, 3).map(createBlogCard).join('');}
-            function renderBlogList() { if(blogListContainer) blogListContainer.innerHTML = blogPosts.map(createBlogCard).join(''); }
+            // Fungsi render kartu blog
+            function createBlogCard(post) { 
+                // Kartu sekarang adalah tautan hash
+                return `<a href="#article/${post.id}" class="light-glass-card rounded-xl text-left overflow-hidden group blog-card-link" data-id="${post.id}">
+                            <img src="${post.image}" alt="Gambar artikel tentang ${post.category}" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110">
+                            <div class="p-6">
+                                <span class="text-xs font-semibold text-blue-600 bg-blue-100 py-1 px-3 rounded-full">${post.category}</span>
+                                <h3 class="font-bold text-xl my-3 text-gray-900">${post.title}</h3>
+                                <div class="text-sm text-gray-500 flex items-center">
+                                    <span>${post.author}</span><span class="mx-2">•</span><span>${post.date}</span>
+                                </div>
+                            </div>
+                        </a>`; 
+            }
+            
+            // Fungsi render detail artikel
             function renderArticleDetail(postId) {
                 const post = blogPosts.find(p => p.id == postId);
-                if (!post) return;
-                articleContentContainer.innerHTML = `<div class="mb-8"><a href="#" class="nav-link text-blue-500 hover:underline" data-page="blog-list-page">&larr; Kembali ke semua artikel</a></div><h1 class="text-4xl md:text-5xl font-bold mb-4 section-title">${post.title}</h1><div class="text-sm text-gray-500 flex items-center mb-6"><span>Oleh: ${post.author}</span><span class="mx-2">•</span><span>${post.date}</span><span class="mx-2">•</span><span class="text-xs font-semibold text-blue-600 bg-blue-100 py-1 px-3 rounded-full">${post.category}</span></div><img src="${post.image}" alt="${post.title}" class="w-full h-auto max-h-96 object-cover rounded-xl mb-8"><div class="prose max-w-none text-gray-700 text-lg leading-relaxed">${post.content}</div>`;
+                if (!post) {
+                    articleContentContainer.innerHTML = `<p class="text-center text-red-500">Artikel tidak ditemukan.</p><div class="mt-8 text-center"><a href="#blog-list" class="text-blue-500 hover:underline">&larr; Kembali ke semua artikel</a></div>`;
+                    return;
+                }
+                // Tambahkan link kembali ke #blog-list
+                articleContentContainer.innerHTML = `<div class="mb-8"><a href="#blog-list" class="text-blue-500 hover:underline">&larr; Kembali ke semua artikel</a></div><h1 class="text-4xl md:text-5xl font-bold mb-4 section-title">${post.title}</h1><div class="text-sm text-gray-500 flex items-center mb-6"><span>Oleh: ${post.author}</span><span class="mx-2">•</span><span>${post.date}</span><span class="mx-2">•</span><span class="text-xs font-semibold text-blue-600 bg-blue-100 py-1 px-3 rounded-full">${post.category}</span></div><img src="${post.image}" alt="${post.title}" class="w-full h-auto max-h-96 object-cover rounded-xl mb-8"><div class="prose max-w-none text-gray-700 text-lg leading-relaxed">${post.content}</div>`;
             }
+            
+            function renderBlogHighlights() { if(blogHighlightContainer) blogHighlightContainer.innerHTML = blogPosts.slice(0, 3).map(createBlogCard).join('');}
+            function renderBlogList() { if(blogListContainer) blogListContainer.innerHTML = blogPosts.map(createBlogCard).join(''); }
 
             // --- PAGE & NAVIGATION ---
             const pages = document.querySelectorAll('.page');
-            const mobileMenu = document.getElementById('mobile-menu');
             const allNavLinks = document.querySelectorAll('header .nav-link');
-            const artikelNavLink = document.querySelector('header .nav-link[data-page="blog-list-page"]');
+            const artikelNavLink = document.querySelector('header .nav-link[data-section="artikel"]');
             let scrollSpyHandler;
 
-            function showPage(pageId) {
+            // --- FUNGSI BARU UNTUK MENAMPILKAN HALAMAN ---
+            function displayPage(pageId, articleId = null) {
                 pages.forEach(page => page.classList.toggle('active', page.id === pageId));
                 allNavLinks.forEach(link => link.classList.remove('active'));
+
                 if (pageId === 'blog-list-page' || pageId === 'article-detail-page') {
                     if(artikelNavLink) artikelNavLink.classList.add('active');
-                } else if (pageId === 'main-page') {
-                    if(scrollSpyHandler) setTimeout(scrollSpyHandler, 100); 
-                }
-                window.scrollTo(0, 0);
-            }
-            
-            document.body.addEventListener('click', function(e) {
-                const navLink = e.target.closest('.nav-link');
-                const blogCard = e.target.closest('.blog-card-link');
-                if (navLink) { 
-                    e.preventDefault(); 
-                    const pageId = navLink.dataset.page; 
-                    if (pageId === 'main-page' && navLink.hash) { 
-                        const headerHeight = document.getElementById('sticky-header-container').offsetHeight;
-                        const targetSection = document.querySelector(navLink.hash);
-                        if(targetSection) {
-                               const elementPosition = targetSection.getBoundingClientRect().top;
-                               const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
-                               window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
-                        }
-                    } else {
-                        showPage(pageId);
+                    if (pageId === 'article-detail-page' && articleId) {
+                        renderArticleDetail(articleId);
                     }
-                    mobileMenu.classList.add('hidden'); 
+                    window.scrollTo(0, 0); // Selalu scroll ke atas untuk halaman artikel
+                } else if (pageId === 'main-page') {
+                    // Biarkan scroll spy yang menangani active link
+                    if(scrollSpyHandler) setTimeout(scrollSpyHandler, 50); 
                 }
-                if (blogCard) { const postId = blogCard.dataset.id; renderArticleDetail(postId); showPage('article-detail-page'); }
-            });
+            }
+
+            // --- FUNGSI BARU: HANDLER UNTUK HASH CHANGE ---
+            function handleHashChange() {
+                const hash = window.location.hash;
+
+                if (hash.startsWith('#article/')) {
+                    const articleId = hash.substring('#article/'.length);
+                    displayPage('article-detail-page', articleId);
+                } else if (hash === '#blog-list') {
+                    displayPage('blog-list-page');
+                } else {
+                    // Ini menangani #hero, #tentang, #alur, dll. ATAU hash kosong (#)
+                    displayPage('main-page');
+                    
+                    const sectionId = hash.substring(1); // 'hero', 'tentang', atau ''
+                    let targetSection;
+
+                    if (sectionId && document.getElementById(sectionId)) {
+                        targetSection = document.getElementById(sectionId);
+                    } else {
+                        // Jika hash kosong (#) atau tidak ditemukan, scroll ke atas
+                        if (!sectionId) {
+                             window.scrollTo({ top: 0, behavior: 'smooth' });
+                        }
+                        return; // Tidak perlu scroll jika section tidak ada
+                    }
+
+                    // Lakukan smooth scroll
+                    const headerHeight = document.getElementById('sticky-header-container').offsetHeight;
+                    const elementPosition = targetSection.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerHeight - 10; // extra offset
+                    
+                    window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+                }
+            }
+
+            // --- Hapus event listener klik navigasi lama ---
+            // (Kita biarkan browser menangani klik href="#...")
 
             // --- ANIMATION & OTHER ---
             const animatedTitle = document.getElementById('animated-title');
@@ -387,14 +426,55 @@
                 }
                 typeWriter();
             }
+            
+            // Event listener untuk klik logo
+            document.querySelector('.nav-link-logo').addEventListener('click', (e) => {
+                e.preventDefault();
+                window.location.hash = '#';
+                handleHashChange(); // Panggil handle utk scroll ke atas
+            });
 
+            // Event listener untuk klik link di menu (termasuk mobile)
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    // Hanya untuk navigasi hash, bukan link eksternal
+                    if (link.getAttribute('href').startsWith('#')) {
+                         // Tutup mobile menu jika terbuka
+                        mobileMenu.classList.add('hidden');
+                    }
+                });
+            });
+
+            // Event listener untuk tombol 'kembali' di halaman list
+            document.querySelector('#blog-list-page .container a').addEventListener('click', (e) => {
+                 e.preventDefault();
+                 window.location.hash = '#';
+            });
+            
+            // Event listener untuk klik kartu blog (delegasi)
+            document.body.addEventListener('click', function(e) {
+                const blogCard = e.target.closest('.blog-card-link');
+                if (blogCard) {
+                    // Biarkan navigasi hash default bekerja
+                    // window.location.hash = blogCard.getAttribute('href');
+                    return;
+                }
+
+                // Logika untuk modal galeri
+                if (e.target.classList.contains('gallery-image')) { 
+                    modal.classList.remove('hidden'); 
+                    modalImg.src = e.target.src; 
+                }
+            });
+
+
+            const mobileMenu = document.getElementById('mobile-menu');
             const mobileMenuButton = document.getElementById('mobile-menu-button');
             mobileMenuButton.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
 
             const modal = document.getElementById('image-modal');
             const modalImg = document.getElementById('modal-image');
             const closeBtn = document.getElementById('modal-close');
-            document.body.addEventListener('click', (e) => { if (e.target.classList.contains('gallery-image')) { modal.classList.remove('hidden'); modalImg.src = e.target.src; }});
             const closeModal = () => modal.classList.add('hidden');
             closeBtn.addEventListener('click', closeModal);
             modal.addEventListener('click', e => e.target === modal && closeModal());
@@ -414,21 +494,33 @@
             const sections = document.querySelectorAll('#main-page section[id]');
             scrollSpyHandler = () => {
                 const activePage = document.querySelector('.page.active');
-                if (!activePage || activePage.id !== 'main-page') return;
+                if (!activePage || activePage.id !== 'main-page') return; // Hanya jalan di main page
+
                 let currentSectionId = '';
+                const headerHeight = document.getElementById('sticky-header-container').offsetHeight;
+                
                 sections.forEach(section => {
                     const sectionTop = section.offsetTop;
-                    const headerHeight = document.getElementById('sticky-header-container').offsetHeight;
-                    if (window.scrollY >= sectionTop - headerHeight - 1) { 
+                    if (window.scrollY >= sectionTop - headerHeight - 20) { 
                         currentSectionId = section.getAttribute('id');
                     }
                 });
+
+                // Cek jika kita di paling atas
+                if (window.scrollY < document.getElementById('tentang').offsetTop - headerHeight - 20) {
+                    currentSectionId = 'hero';
+                }
                 
                 allNavLinks.forEach(link => {
+                     const linkSection = link.getAttribute('href') ? link.getAttribute('href').substring(1) : '';
+                     
+                     // Khusus untuk link artikel
                      if (link.dataset.section === 'artikel') {
-                         link.classList.toggle('active', currentSectionId === 'artikel');
-                     } else if (link.dataset.page !== 'blog-list-page') {
-                         link.classList.toggle('active', link.dataset.section === currentSectionId);
+                         link.classList.toggle('active', currentSectionId === 'artikel'); // 'artikel' adalah ID section, bukan hash
+                     } 
+                     // Untuk link section lainnya
+                     else if (linkSection) {
+                         link.classList.toggle('active', linkSection === currentSectionId);
                      }
                 });
             };
@@ -437,7 +529,10 @@
             // --- INITIALIZATION ---
             renderBlogHighlights();
             renderBlogList();
-            showPage('main-page');
+            
+            // --- AKTIVASI NAVIGASI HASH ---
+            window.addEventListener('hashchange', handleHashChange);
+            handleHashChange(); // Panggil saat load pertama kali
 
              // Plexus Background Animation
             const canvas = document.getElementById('hero-canvas-background');
